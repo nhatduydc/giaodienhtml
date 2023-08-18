@@ -1,0 +1,385 @@
+/*Căn chỉnh tất cả các thẻ HTML*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Thiết lập body*/
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    
+}
+
+/*Header*/
+#header{
+    background-color:cornsilk;
+}
+
+/*Thiết lập khung*/
+.container{
+    max-width: 1600px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Khung meunu*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+/*Logo menu*/
+#logo{
+    padding: 5px 0px;
+    margin-left: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    height: 54px;
+}
+
+/*Logo menu*/
+#logo img{
+    max-width: 130px;
+    height: auto;
+    line-height: 15px;
+    margin-left: 30px;
+}
+
+/*Căn chỉnh main-menu*/
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin-right: -50px;
+    padding: 0;
+}
+
+/*Thiết lập thẻ li bên trong menu*/
+#main-menu li{
+    position: relative;
+}
+
+/*Thiết lập menu cấp 1, thẻ a trong thẻ li*/
+#main-menu li a{
+    color:black;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+/*Thiết lập menu cấp 2, 3*/
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color:beige;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #434343;
+    display: none;
+}
+
+/*Căn chỉnh phần thanh tìm kiếm*/
+#search-box #search-text{
+	border: none;
+	outline: none;
+	margin-top: 9px;
+	margin-left: 30px;
+    margin-right: 0px;
+	padding: 8px 30px;
+	padding-left: 10px;
+	font-size: 17px;
+	border-radius: 30px;
+}
+
+/*Căn chỉnh icon tìm kiếm*/
+#search-box #search-btn{
+	background-color: white;
+	border: none;
+	width: 40px;
+	line-height: 32px;
+	font-size: 17px;
+	margin: -42px;
+	cursor: pointer;
+	border-radius: 50px;
+    margin-right: 30px;
+}
+
+/*Căn chỉnh hover chuột cho thẻ li cấp 1 và thẻ ul trong menu cấp 2*/
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+/*Căn chỉnh thẻ a cho menu cấp 2, 3*/
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #434343;
+    left: 0;
+}
+
+/*Căn chỉnh hover thẻ li trong thẻ a trong menu cấp 2, 3*/
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid burlywood;
+    color:crimson;
+}
+
+#main-menu ul.sub-menu ul.sub-menu li:hover a{
+    color:black;
+}
+
+/*Căn chỉnh thẻ a cuối cùng của menu trong thẻ li trong menu cấp 2, 3*/
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 199px;
+    top: -15px;
+}
+
+/*Thiết lập border khi hover qua main-menu*/
+#main-menu>li>a{
+    position: relative;
+}
+
+/*hover border vào thẻ a*/
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+
+/*Thiết lập danh sách công việc*/
+#wrapper #img_giua{
+    padding: 0;    
+}
+
+/*Thiết lập ảnh nền*/
+#wrapper #img_giua img{
+    width: 1519px;
+    height: 520px;
+}
+
+/*Thiết lập danh sách công việc*/
+#wrapper .gioi_thieu{
+    background: #fff;
+    color: #0091ce;
+    font-size: 26px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*Thiết lập form*/
+#wrapper .gioi_thieu .head-title1{
+    background: #fff;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+#wrapper .khung-giua{
+    width: 100%;
+    margin: 50px auto;
+}
+
+#wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#wrapper .cv-box {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    padding: 16px;
+    width: 20%;
+    margin-bottom: 15px;
+}
+
+#wrapper .form-group {
+    margin-bottom: 1rem;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#wrapper .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#wrapper .cv-box h4 {
+    font-weight: 700;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+}
+
+#radio{
+    text-align: left;
+}
+
+#wrapper .order-box #radio .radio1{
+    display: block;
+    position: relative;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+#wrapper .order-box #radio .radio1 label{
+    font-weight:500;
+    cursor: pointer;
+}
+
+/*Thiết lập danh sách công việc*/
+#wrapper .job-box{
+    min-height: 96px;
+    margin-bottom: 0;
+}
+
+#wrapper .job-box-left{
+    width: 100%;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+#wrapper.job-box .dong1{
+    width: 60px;
+    float: left;
+}
+
+/*Thiết lập img cho từng công việc*/
+#wrapper .job-box {
+    float: left;
+    width: 80px;
+}
+#wrapper  .img1 img{
+    float: left;
+    width: 80px;
+	
+}
+
+#wrapper .job-box-left .job-info{
+    padding-left: 50px;
+	text-align: justify;
+    width: 950px;
+}
+
+#wrapper .job-box-left .job-info a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#wrapper .job-box-left .job-info2 a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    color: #999;
+}
+
+#wrapper .job-box-left .job-info .job-info1 .text1{
+    text-transform: uppercase;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .luong .luong1{
+    color: #0091ce;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .khuvuc{
+    padding-left: 80px;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .chucvu{
+    padding-left: 80px;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .khuvuc .khuvuc1{
+    color: #0091ce;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .times{
+    padding-left: 570px;
+
+}
+
+#wrapper .job-box .job-box-left hr{
+    width: 100%;
+	height: 1px;
+	background-color:#ced4da;
+	size: 10px;
+}
+
+hr{
+    width: 100%;
+	height: 3px;
+	background-color: red;
+	size: 10px;
+    margin-top: 30px;
+}
+
+#wrapper.text-center.text1{
+    padding-left: 900px;
+    text-align: center!important;
+    cursor: pointer;
+}
+
+.text-center .xemthem{
+    width: 80%;
+    border-radius: 7px;
+	padding: 0.5rem 1rem;
+    margin-left: 77px;
+	background-color:dodgerblue;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+#content{
+	width:1000px;
+	min-height:1000px;
+	border:5px solid #CDCDCD;
+	float: left;
+	border-style:groove;
+	
+}
+
+

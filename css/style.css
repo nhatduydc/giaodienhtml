@@ -1,0 +1,658 @@
+/*Căn chỉnh tất cả các thẻ HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Thiết lập body*/
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    
+}
+
+/*Header*/
+#header{
+    background-color:cornsilk;
+}
+
+/*Bắt Đầu khung - Header*/
+
+.container{
+    max-width: 1600px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Bắt Đầu Khung main meunu*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#logo{
+    padding: 5px 0px;
+    margin-left: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    height: 54px;
+}
+
+#logo img{
+    max-width: 130px;
+    height: auto;
+    line-height: 15px;
+    margin-left: 30px;
+}
+
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin-right: -50px;
+    padding: 0;
+}
+
+#main-menu li{
+    position: relative;
+}
+
+#main-menu li a{
+    color:black;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color:beige;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #434343;
+    display: none;
+}
+
+/*Căn chỉnh phần thanh tìm kiếm*/
+#search-box #search-text{
+	border: none;
+	outline: none;
+	margin-top: 9px;
+	margin-left: 30px;
+    margin-right: 0px;
+	padding: 8px 30px;
+	padding-left: 10px;
+	font-size: 17px;
+	border-radius: 30px;
+}
+
+/*Căn chỉnh icon tìm kiếm*/
+#search-box #search-btn{
+	background-color: white;
+	border: none;
+	width: 40px;
+	line-height: 32px;
+	font-size: 17px;
+	margin: -42px;
+	cursor: pointer;
+	border-radius: 50px;
+    margin-right: 30px;
+}
+
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #434343;
+    left: 0;
+}
+
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid burlywood;
+    color:crimson;
+}
+
+#main-menu ul.sub-menu ul.sub-menu li:hover a{
+    color:black;
+}
+
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 199px;
+    top: -15px;
+}
+
+#main-menu>li>a{
+    position: relative;
+}
+
+
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+/*Kết Thúc Khung main meunu*/
+/*Kết Thúc khung - Header*/
+
+/*Bắt đầu img header*/
+#wrapper #img_giua{
+    padding: 0;    
+}
+
+#wrapper #img_giua img{
+    width: 1519px;
+    height: 520px;
+}
+/*Bắt đầu img header*/
+
+/*Bắt đầu nội dung giới thiệu*/
+#wrapper .gioi_thieu{
+    background: #fff;
+    color: #0091ce;
+    font-size: 26px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#wrapper .gioi_thieu .head-title1{
+    background: #fff;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px
+}
+/*Kết thúc nội dung giới thiệu*/
+
+/*Bắt đầu nội dung ở giữa*/
+/*Bắt đầu nội dung Form*/
+#wrapper .khung-giua{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#wrapper .cv-box {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    padding: 16px;
+    width: 20%;
+    margin-bottom: 15px;
+}
+
+/*Thiết lập nội dung Form công việc*/
+#wrapper .form-group {
+    margin-bottom: 1rem;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#wrapper .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#wrapper .cv-box h4 {
+    font-weight: 700;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+}
+
+#radio{
+    text-align: left;
+}
+
+#wrapper .order-box #radio .radio1{
+    display: block;
+    position: relative;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+#wrapper .order-box #radio .radio1 label{
+    font-weight:500;
+    cursor: pointer;
+}
+
+.searchcv{
+    width: 55%;
+    border-radius: 5px;
+	padding: 0.5rem 1rem;
+	background-color:#495057;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/*Kết thúc nội dung Form*/
+
+
+/*Bắt đầu thiết lập danh sách công việc*/
+#wrapper .job-box{
+    min-height: 200px;
+    margin-bottom: 0;
+}
+
+#wrapper .job-box-left{
+    width: 100%;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+#wrapper.job-box .dong1{
+    width: 60px;
+    float: left;
+}
+
+#wrapper .job-box .img1 img{
+    float: left;
+    width: 80px;
+}
+
+#wrapper .job-box-left .job-info{
+    padding-left: 150px;
+}
+
+#wrapper .job-box-left .job-info a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#wrapper .job-box-left .job-info2 a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    color: #999;
+}
+
+#wrapper .job-box-left .job-info .job-info1{
+    text-transform: uppercase;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .luong .luong1{
+    color: #0091ce;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .khuvuc{
+    padding-left: 80px;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .chucvu{
+    padding-left: 80px;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .khuvuc .khuvuc1{
+    color: #0091ce;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .times{
+    padding-left: 528px;
+}
+
+#wrapper .job-box-left .job-info .job-info3 .search{
+    margin-left: 125px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: -10px;
+}
+
+#wrapper .job-box-left .xemthem{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent; 
+    margin-left: 980px;
+}
+/*Kết thúc thiết lập danh sách công việc*/
+
+/*Thẻ hr*/
+#wrapper .job-box .job-box-left hr{
+    width: 96.6%;
+	height: 1px;
+	background-color:#ced4da;
+	size: 10px;
+}
+
+hr{
+    width: 100%;
+	height: 5px;
+	background-color: red;
+	size: 100px;
+    margin-top: 30px;
+}
+/*Thẻ hr*/
+
+/*Bắt đầu nhà tuyển dụng*/
+ul.khung{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-left: 20px;
+	padding-bottom: 30px;
+}
+
+ul.khung li{
+	flex-basis: 33%;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+
+ul.khung li .khung-top{
+	padding: 30px;
+	margin: 0px 0px;
+}
+
+ul.khung li img{
+    border: 1px solid #222;
+    border-color:#ced4da;
+    border-radius: 5px;
+	width: 250px;
+    margin-left: 60px;
+	height: auto;
+}
+
+ul.khung li .khung-info{
+	font-size: 20px;
+	text-align: center;
+    margin-top: -15px;
+}
+
+ul.khung li .khung-info a{
+	display: block;
+	text-decoration: none;
+}
+
+ul.khung li .khung-info a.khung-name{
+	color: black;
+	padding: 3px 0px;
+}
+
+.xemtatca{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.xemtatca .textxtc{
+    color: #28a745;
+    text-decoration: none;
+    background-color: transparent;
+}
+/*Kết thúc nhà tuyển dụng*/
+
+/*Bắt đầu nội dung footer*/
+/*Bắt đầu nội dung giới thiệu*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    margin-top: 2px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .noi-dung.about p{
+    color: #999;
+}
+
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover{
+    background: #f00;
+}
+
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+/*Kết thúc nội dung giới thiệu*/
+
+/*Bắt đầu nội dung đường dẫn*/
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+ }
+.links{
+    position: relative;
+    width: 25%;
+ }
+ .links ul li{
+    list-style: none;
+ }
+ .links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+ }
+.links ul li a:hover{
+    color: #fff;
+ }
+/*Kết thúc nội dung đường dẫn*/
+
+/*Bắt đầu nội dung liên hệ*/
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top:16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+.btn--primary:hover {
+    background: #f00;
+}
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.form__field {
+    width: 90%;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
+
+@media  (max-width: 768px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+}
+/*Kết thúc nội dung liên hệ*/
+
